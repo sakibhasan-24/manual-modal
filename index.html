@@ -3,11 +3,34 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/01c61bf859.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Modal</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>My Modal</h1>
+    <div class="main-conatiner">
+      <h1>You win a big Deal</h1>
+      <button class="btn">Get Offer</button>
+    </div>
+    <div class="modal-container">
+      <h4>Winning offer</h4>
+      <label for="email">Email</label>
+      <input
+        type="email"
+        name="email"
+        placeholder="enter your email"
+        id=""
+        class="input"
+      />
+      <button class="modal-btn">Get Offer</button>
+      <div class="close-icon">
+        <i class="fa-solid fa-xmark fa-4x"></i>
+      </div>
+    </div>
+
     <script src="script.js"></script>
   </body>
 </html>
