@@ -35,3 +35,61 @@ body {
 .btn:hover {
   filter: brightness(0.8);
 }
+.active.main-conatiner {
+  filter: blur(5px) brightness(0.8);
+}
+.modal-container {
+  width: 40rem;
+  height: 20rem;
+  position: fixed;
+  left: 50%;
+  top: 30%;
+  transform: translateX(-50%);
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 2.5rem;
+  background: url("https://images.unsplash.com/photo-1489944440615-453fc2b6a9a9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1923&q=80");
+  background-size: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+.modal-container h4 {
+  font-size: 3.5rem;
+  color: yellowgreen;
+  margin: 1rem 0;
+}
+
+label {
+  color: yellowgreen;
+  font-size: 2rem;
+}
+.modal-btn {
+  padding: 1rem 2rem;
+  border: 2px solid;
+  font-size: 3rem;
+  cursor: pointer;
+  background-color: orangered;
+}
+.input {
+  border: 2px soli;
+  padding: 1rem 3rem;
+  margin: 1rem 0;
+  text-align: center;
+}
+.input::placeholder {
+  color: rgb(159, 122, 122);
+}
+.close-icon {
+  position: absolute;
+  right: 3rem;
+  color: #fff;
+  cursor: pointer;
+  transition: color 0.4s;
+}
+.close-icon:hover {
+  color: red;
+}
+.active.modal-container {
+  visibility: hidden;
+}
